@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Videy.co: Curated Video Collection & Popular Clips</title>
+  <meta name="description" content="Dive into Videy.co's curated video collection! Discover popular clips, entertaining moments, and a wide array of engaging video content for every interest." />
+  <meta name="keywords" content="video gallery, popular videos, curated clips, entertainment, online video, funny moments, heartwarming content, diverse videos" />
+  <meta name="author" content="Videy.co Team" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://xcdnvidey.github.io" />
+
+  <meta property="og:title" content="Videy.co: Curated Video Collection & Popular Clips" />
+  <meta property="og:description" content="Dive into Videy.co's curated video collection! Discover popular clips, entertaining moments, and a wide array of engaging video content for every interest." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://xcdnvidey.github.io" />
+  <meta property="og:image" content="https://xcdnvidey.github.io/videy-share-image-2.jpg" />
+
+  <style>
+    :root {
+      
+      --bg-color: #f4f7f6;
+      --card-bg-color: #ffffff;
+      --text-color: #333333;
+      --link-color: #007bff;
+      --link-hover-color: #0056b3;
+      --shadow-light: rgba(0, 0, 0, 0.08);
+      --shadow-heavy: rgba(0, 0, 0, 0.15);
+    }
+
+    body {
+      background-color: var(--bg-color);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--text-color);
+      text-align: center;
+      padding: 0.5rem 1rem;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: clamp(0.9rem, 4.5vw, 2.5rem);
+      color: var(--link-color);
+      margin-bottom: 2rem;
+      text-shadow: 1px 1px 3px var(--shadow-light);
+      white-space: nowrap; 
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1.5rem;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    figure {
+      background-color: var(--card-bg-color);
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px var(--shadow-light);
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    figure:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px var(--shadow-heavy);
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
+
+    figcaption {
+      margin-top: 0.5rem;
+      margin-bottom: 0.25rem;
+      font-size: clamp(0.7rem, 2vw, 1rem);
+      font-weight: 600;
+      color: var(--text-color);
+      flex-grow: 1;
+	  white-space: nowrap;
+    }
+
+    .video-link {
+      display: flex; /* Change to flex */
+      align-items: center; /* Vertically center content */
+      justify-content: center; /* Horizontally center content */
+      width: 100%; /* Or auto / fit-content */
+      box-sizing: border-box;
+      margin: 0 auto;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--link-color);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: clamp(0.9rem, 3vw, 1rem);
+      font-weight: 600;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  
+      white-space: nowrap; 
+    }
+
+    .video-link:hover {
+      background-color: var(--link-hover-color);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px var(--shadow-heavy);
+    }
+	.next-page-button {
+      margin-top: 30px; 
+      margin-bottom: 50px; 
+    }
+
+    
+    @media (min-width: 768px) {
+      .gallery-container {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .video-link {
+        width: auto;
+      }
+    }
+    .hidden-css {
+      display: none !important; 
+    }	
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Ultimate Video Gallery for Viral Content</h1>
+  </header>
+
+  <main>
+    <div class="gallery-container">
+      <figure itemscope itemtype="http://schema.org/VideoObject">
+        <img src="1.jpg" alt="Adorable baby smiling brightly, a heartwarming moment" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
+        <figcaption itemprop="name">🥰🥰 My Baby 🤍🖤</figcaption>
+        <meta itemprop="description" content="A heartwarming clip of a baby's joyful smile, perfect for sharing." />
+        <meta itemprop="uploadDate" content="2025-08-02" /> <link itemprop="contentUrl" href="https://brexit-web.github.io/JEEABXsC1.mp4" />
+        <a href="https://brexit-web.github.io/JEEABXsC1.mp4" class="video-link" aria-label="Watch video: My Baby">Watch Video</a>
+      </figure>
+
+      <figure itemscope itemtype="http://schema.org/VideoObject">
+        <img src="2.jpg" alt="Pinky vs Jazmine Cashmere in an exciting face-off" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
+        <figcaption itemprop="name">Pinky vs Jazmine</figcaption>
+        <meta itemprop="description" content="An exciting video featuring the epic confrontation between Pinky and Jazmine" />
+        <meta itemprop="uploadDate" content="2025-08-02" />
+        <link itemprop="contentUrl" href="https://brexit-web.github.io/35ntKByC1.mp4" />
+        <a href="https://brexit-web.github.io/35ntKByC1.mp4" class="video-link" aria-label="Watch video: Pinky vs Jazmine Cashmere">Watch Video</a>
+      </figure>
+
+      <figure itemscope itemtype="http://schema.org/VideoObject">
+        <img src="3.jpg" alt="Person exuding beauty and perfection, captivating visuals" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
+        <figcaption itemprop="name">Perfection Human Form</figcaption>
+        <meta itemprop="description" content="A stunning video showcasing an individual's unparalleled beauty and grace." />
+        <meta itemprop="uploadDate" content="2025-08-02" />
+        <link itemprop="contentUrl" href="https://brexit-web.github.io/3btKc0MS1.mp4" />
+        <a href="https://brexit-web.github.io/3btKc0MS1.mp4" class="video-link" aria-label="Watch video: Perfection human form">Watch Video</a>
+      </figure>
+
+      <figure itemscope itemtype="http://schema.org/VideoObject">
+        <img src="4.jpg" alt="Humorous clip about a daughter's school experience" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
+        <figcaption itemprop="name">My Daughter Miss School</figcaption>
+        <meta itemprop="description" content="A funny and lighthearted video about a child's school absence." />
+        <meta itemprop="uploadDate" content="2025-08-02" />
+        <link itemprop="contentUrl" href="https://brexit-web.github.io/IxxH2s1Z1.mp4" />
+        <a href="https://brexit-web.github.io/IxxH2s1Z1.mp4" class="video-link" aria-label="Watch video: my daughter miss school">Watch Video</a>
+      </figure>
+
+      <figure itemscope itemtype="http://schema.org/VideoObject">
+        <img src="5.jpg" alt="Video portraying ideal relationship expectations" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
+        <figcaption itemprop="name">I Expect Us to Be After...</figcaption>
+        <meta itemprop="description" content="A video illustrating romantic or personal expectations for a future scenario." />
+        <meta itemprop="uploadDate" content="2025-08-02" />
+        <link itemprop="contentUrl" href="https://brexit-web.github.io/2A4rv4sm1.mp4" />
+        <a href="https://brexit-web.github.io/2A4rv4sm1.mp4" class="video-link" aria-label="Watch video: i expect us to be after">Watch Video</a>
+      </figure>
+
+      <figure itemscope itemtype="http://schema.org/VideoObject">
+        <img src="6.jpg" alt="Person with buttons closed, radiating a wide-open vibe" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
+        <figcaption itemprop="name">Buttons Closed,Vibe Open</figcaption>
+        <meta itemprop="description" content="A video celebrating a relaxed and confident attitude with a closed-off appearance." />
+        <meta itemprop="uploadDate" content="2025-08-02" />
+        <link itemprop="contentUrl" href="https://brexit-web.github.io/DTnu3Tuk1.mp4" />
+        <a href="https://brexit-web.github.io/DTnu3Tuk1.mp4" class="video-link" aria-label="Watch video: Buttons closed,vibe open">Watch Video</a>
+      </figure>
+
+      <figure itemscope itemtype="http://schema.org/VideoObject">
+        <img src="7.jpg" alt="Metaphor for a soft approach with a sharp, strategic game" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
+        <figcaption itemprop="name">Soft Bow, Sharp Game</figcaption>
+        <meta itemprop="description" content="A video illustrating a subtle yet highly effective strategy or performance." />
+        <meta itemprop="uploadDate" content="2025-08-02" />
+        <link itemprop="contentUrl" href="https://brexit-web.github.io/85Zopc3r1.mp4" />
+        <a href="https://brexit-web.github.io/85Zopc3r1.mp4" class="video-link" aria-label="Watch video: Soft bow, sharp game">Watch Video</a>
+      </figure>
+
+      <figure itemscope itemtype="http://schema.org/VideoObject">
+        <img src="8.jpg" alt="Delicious food or treat looking incredibly yummy" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
+        <figcaption itemprop="name">Absolutely Yummy😮‍💨😍</figcaption>
+        <meta itemprop="description" content="A tantalizing video showcasing a delightful and delicious treat." />
+        <meta itemprop="uploadDate" content="2025-08-02" />
+        <link itemprop="contentUrl" href="https://brexit-web.github.io/VSVSWkpF1.mp4" />
+        <a href="https://brexit-web.github.io/VSVSWkpF1.mp4" class="video-link" aria-label="Watch video: Yummy">Watch Video</a>
+      </figure>
+
+      <figure itemscope itemtype="http://schema.org/VideoObject">
+        <img src="9.jpg" alt="A classic cowboy riding through a landscape" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
+        <figcaption itemprop="name">The Cowboy Experience 🐎</figcaption>
+        <meta itemprop="description" content="A captivating video celebrating the rugged spirit of a cowboy." />
+        <meta itemprop="uploadDate" content="2025-08-02" />
+        <link itemprop="contentUrl" href="https://brexit-web.github.io/fHokFTFG1.mp4" />
+        <a href="https://brexit-web.github.io/fHokFTFG1.mp4" class="video-link" aria-label="Watch video: The cowboy">Watch Video</a>
+      </figure>
+
+      <figure itemscope itemtype="http://schema.org/VideoObject">
+        <img src="0.jpg" alt="An incredibly awesome and surprising shot" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
+        <figcaption itemprop="name">Awesome Shot 😱</figcaption>
+        <meta itemprop="description" content="A video showcasing an impressive and breathtaking visual capture." />
+        <meta itemprop="uploadDate" content="2025-08-02" />
+        <link itemprop="contentUrl" href="https://brexit-web.github.io/lbdOMYh21.mp4" />
+        <a href="https://brexit-web.github.io/lbdOMYh21.mp4" class="video-link" aria-label="Watch video: Awesome shot">Watch Video</a>
+      </figure>
+
+      <figure itemscope itemtype="http://schema.org/VideoObject">
+        <img src="11.jpg" alt="A private video, intimate and personal" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
+        <figcaption itemprop="name">My Private Video</figcaption>
+        <meta itemprop="description" content="An exclusive video meant for private viewing, shared within a select circle." />
+        <meta itemprop="uploadDate" content="2025-08-02" />
+        <link itemprop="contentUrl" href="https://brexit-web.github.io/gjmuzoU81.mp4" />
+        <a href="https://brexit-web.github.io/gjmuzoU81.mp4" class="video-link" aria-label="Watch video: My Private video">Watch Video</a>
+      </figure>
+
+      <figure itemscope itemtype="http://schema.org/VideoObject">
+        <img src="12.jpg" alt="Portrait of Joey White & Sami White, a memorable duo" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
+        <figcaption itemprop="name">Joey White & Sami White</figcaption>
+        <meta itemprop="description" content="A video featuring the engaging presence of Joey White and Sami White." />
+        <meta itemprop="uploadDate" content="2025-08-02" />
+        <link itemprop="contentUrl" href="https://brexit-web.github.io/MnSk7RtQ1.mp4" />
+        <a href="https://brexit-web.github.io/MnSk7RtQ1.mp4" class="video-link" aria-label="Watch video: Joey White & Sami White">Watch Video</a>
+      </figure>
+
+      <figure itemscope itemtype="http://schema.org/VideoObject">
+        <img src="13.jpg" alt="People embracing chaos, a humorous or wild scene" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
+        <figcaption itemprop="name">Woke Up and Chose Chaos</figcaption>
+        <meta itemprop="description" content="A humorous video of individuals deliberately causing disorder or excitement." />
+        <meta itemprop="uploadDate" content="2025-08-02" />
+        <link itemprop="contentUrl" href="https://brexit-web.github.io/DYAbksXy1.mp4" />
+        <a href="https://brexit-web.github.io/DYAbksXy1.mp4" class="video-link" aria-label="Watch video: woke up and chose chaos">Watch Video</a>
+      </figure>
+
+      <figure itemscope itemtype="http://schema.org/VideoObject">
+        <img src="14.jpg" alt="A loyal dog patiently waiting for its master to return" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
+        <figcaption itemprop="name">Dog Waiting for Its Master</figcaption>
+        <meta itemprop="description" content="A touching video showing the unwavering loyalty of a dog anticipating its owner's return." />
+        <meta itemprop="uploadDate" content="2025-08-02" />
+        <link itemprop="contentUrl" href="https://brexit-web.github.io/x90DVkqb1.mp4" />
+        <a href="https://brexit-web.github.io/x90DVkqb1.mp4" class="video-link" aria-label="Watch video: Dog Waiting for Its Master">Watch Video</a>
+      </figure>
+
+      <figure itemscope itemtype="http://schema.org/VideoObject">
+        <img src="15.jpg" alt="Everything arranged deliberately for a specific reason" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
+        <figcaption itemprop="name">All In There For A Reason</figcaption>
+        <meta itemprop="description" content="A philosophical or insightful video suggesting that nothing is coincidental." />
+        <meta itemprop="uploadDate" content="2025-08-02" />
+        <link itemprop="contentUrl" href="https://brexit-web.github.io/7m9P354R1.mp4" />
+        <a href="https://brexit-web.github.io/7m9P354R1.mp4" class="video-link" aria-label="Watch video: all in there for a reason">Watch Video</a>
+      </figure>
+
+      <figure itemscope itemtype="http://schema.org/VideoObject">
+        <img src="16.jpg" alt="Performer holding a microphone under a bright spotlight" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
+        <figcaption itemprop="name">Mic in Hand, the Spotlight</figcaption>
+        <meta itemprop="description" content="A captivating video of a performer commanding attention with a microphone." />
+        <meta itemprop="uploadDate" content="2025-08-02" />
+        <link itemprop="contentUrl" href="https://brexit-web.github.io/BaxGy34n1.mp4" />
+        <a href="https://brexit-web.github.io/BaxGy34n1.mp4" class="video-link" aria-label="Watch video: Mic in hand, spotlight">Watch Video</a>
+      </figure>
+
+      <figure itemscope itemtype="http://schema.org/VideoObject">
+        <img src="17.jpg" alt="Yabdiel Cotto, a charismatic movie king" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
+        <figcaption itemprop="name">Yabdiel The Movie King</figcaption>
+        <meta itemprop="description" content="A tribute video celebrating Yabdiel Cotto's cinematic presence and impact." />
+        <meta itemprop="uploadDate" content="2025-08-02" />
+        <link itemprop="contentUrl" href="https://brexit-web.github.io/nYTia0iV1.mp4" />
+        <a href="https://brexit-web.github.io/nYTia0iV1.mp4" class="video-link" aria-label="Yabdiel The Movie King">Watch Video</a>
+      </figure>
+
+      <figure itemscope itemtype="http://schema.org/VideoObject">
+        <img src="18.jpg" alt="A shocking visual that will truly surprise you" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
+        <figcaption itemprop="name">This Will Shock Your Self!</figcaption>
+        <meta itemprop="description" content="A startling video designed to surprise and challenge perceptions." />
+        <meta itemprop="uploadDate" content="2025-08-02" />
+        <link itemprop="contentUrl" href="https://brexit-web.github.io/1m8Vll2K1.mp4" />
+        <a href="https://brexit-web.github.io/1m8Vll2K1.mp4" class="video-link" aria-label="Watch video: This will shock your self">Watch Video</a>
+      </figure>
+
+      <figure itemscope itemtype="http://schema.org/VideoObject">
+        <img src="19.jpg" alt="Scene showing everything perfectly ready and prepared" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
+        <figcaption itemprop="name">Everything is ready</figcaption>
+        <meta itemprop="description" content="A video demonstrating a state of complete readiness or preparation." />
+        <meta itemprop="uploadDate" content="2025-08-02" />
+        <link itemprop="contentUrl" href="https://brexit-web.github.io/frGzXq121.mp4" />
+        <a href="https://brexit-web.github.io/frGzXq121.mp4" class="video-link" aria-label="Watch video: Everything is ready">Watch Video</a>
+      </figure>
+
+      <figure itemscope itemtype="http://schema.org/VideoObject">
+        <img src="https://github.com/xcdnvidey/5Llx2fSq1.mp4/blob/main/5Llx2fSq1.mp4.jpg?raw=true" alt="Masked man preparing for intense action or an event" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
+        <figcaption itemprop="name">Masked Man Ready for</figcaption>
+        <meta itemprop="description" content="An intriguing video featuring a masked figure poised for an exciting challenge." />
+        <meta itemprop="uploadDate" content="2025-08-02" />
+        <link itemprop="contentUrl" href="https://brexit-web.github.io/5Llx2fSq1.mp4" />
+        <a href="https://brexit-web.github.io/5Llx2fSq1.mp4" class="video-link" aria-label="Watch video: Masked Man Ready for">Watch Video</a>
+      </figure>
+    </div>
+  </main>
+
+  <a href="https://carlito471.github.io" class="video-link next-page-button">Go to Next Page</a>
+
+  <footer>
+    <p>&copy; 2025 Videy.co. All rights reserved.</p>
+    <div id="secretMessage" class="hidden-css">This is a secret message, hidden by default.</div>
+  </footer>
+
+  <script>
+    
+    const secretMessage = document.getElementById('secretMessage');
+    if (secretMessage) { // Check if the element exists to prevent errors
+      secretMessage.classList.add('hidden-css');
+    }
+
+    
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+      console.log('Right-click prevented.'); // Optional: for debugging
+    });
+
+    
+    document.addEventListener('keydown', function(e) {
+      const forbiddenKeys = ['F12'];
+      const forbiddenCtrlShiftKeys = ['I', 'J', 'C']; // I for Inspect, J for Console, C for Elements
+      const forbiddenCtrlKeys = ['U', 'S']; // U for View Source, S for Save
+
+      
+      if (forbiddenKeys.includes(e.key)) {
+        e.preventDefault();
+        console.log(`${e.key} key prevented.`);
+      }
+
+      
+      if (e.ctrlKey && e.shiftKey && forbiddenCtrlShiftKeys.includes(e.key.toUpperCase())) {
+        e.preventDefault();
+        console.log(`Ctrl+Shift+${e.key.toUpperCase()} prevented.`);
+      }
+
+      
+      if (e.ctrlKey && forbiddenCtrlKeys.includes(e.key.toUpperCase())) {
+        e.preventDefault();
+        console.log(`Ctrl+${e.key.toUpperCase()} prevented.`);
+      }
+    });
+
+    
+    (function() {
+      var devtools = /devtool/i;
+      var checkStatus = function() {
+        if (devtools.test(function() {}.toString())) {
+          // This part only executes if dev tools are open in some browsers
+          console.warn("Hey! Looks like you're peeking. 😉");
+          console.warn("Our content is meant to be enjoyed directly!");
+          // You could also redirect, or overlay content, but that can be annoying for users.
+        }
+      };
+      
+    })();
+
+  </script>
+</body>
+</html>
